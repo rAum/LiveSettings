@@ -51,16 +51,5 @@ private:
 	IVariables* variables_;
 };
 
-class EmptyDataSource : public IDataSource
-{
-private:
-	void FetchData(IVariables* variables)
-	{
-		std::this_thread::sleep_for(std::chrono::milliseconds(50));
-		variables->Set("x", rand() % 10);
-		variables->Set("jakas tam", rand() % 10);
-	}
-};
-
 }  // namespace inner
 }  // namespace varsync

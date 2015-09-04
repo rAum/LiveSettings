@@ -1,0 +1,23 @@
+﻿<Application x:Class="VarSync.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:VarSync"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+
+        <LinearGradientBrush x:Key="OnlineBrush" EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+            <GradientStop Color="#FFBEFF7C" Offset="1"/>
+            <GradientStop Color="#FFD5F5B5"/>
+            <GradientStop Color="#FF74BB2E" Offset="0.593"/>
+            <GradientStop Color="#FF92EE37" Offset="0.567"/>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="OfflineBrush"  EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+            <GradientStop Color="#FFFF7C7C" Offset="1"/>
+            <GradientStop Color="#FFF5B5B5"/>
+            <GradientStop Color="#FFBB2E2E" Offset="0.593"/>
+            <GradientStop Color="Red" Offset="0.567"/>
+        </LinearGradientBrush>
+
+    </Application.Resources>
+</Application>

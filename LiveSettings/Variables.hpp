@@ -18,7 +18,7 @@ public:
 	virtual std::string* Register(const std::string name, std::string defaultValue) = 0;
 	virtual void Set(const std::string name, std::string newValue) = 0;
 	virtual ~IVariables() {}
-};  // struct IVariables
+};  // class IVariables
 
 class Variables : public IVariables
 {
@@ -94,7 +94,6 @@ private:
 	std::unordered_map<std::string, std::string*> strings_;
 	std::mutex int_mutex, float_mutex, string_mutex;
 };  // class Variables
-
 
 }  // namespace inner
 }  // namespace varsync
